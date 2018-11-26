@@ -1,7 +1,7 @@
-public class Persona{
-	int persona[]; 
+public class Persona {
+    public int persona[]; 
 	public Persona(){
-		this.persona= null;
+		this.persona = new int[10];
 	}
 	public void show(){
 		for (int i =0;i<this.persona.length;i++) {
@@ -18,4 +18,5 @@ public class Persona{
 			}
 		}		
 	}
+    
 }

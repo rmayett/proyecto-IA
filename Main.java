@@ -1,13 +1,12 @@
-
-import java.util.Scanner;  
-public class IA{
-	public void poblacion(){
+public class Main {
+    public void poblacion(){
 	Persona per = new Persona();
-	per.agregar();
+	per.agrega();
 	per.show();
 	}
 	public static void main(String[] args) {
-		IA proyecto = new IA();
+		Main proyecto = new Main();
 		proyecto.poblacion();
 	}
+    
 }
