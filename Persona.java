@@ -13,6 +13,6 @@ public class Persona {
             System.out.println("");
 	}
 	public void agrega(int i){
-            this.persona[i]=r.nextInt(15)+ 1;         		
+            this.persona[i]=r.nextInt(10);         		
 	}   
 }
