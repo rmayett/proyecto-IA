@@ -1,22 +1,18 @@
+import java.util.Random;
 public class Persona {
+    Random r = new Random();
     public int persona[]; 
 	public Persona(){
 		this.persona = new int[10];
 	}
 	public void show(){
+            System.out.println("Persona:");
 		for (int i =0;i<this.persona.length;i++) {
-			System.out.println(this.persona[i]);			
+			System.out.print(" "+this.persona[i]);			
 		}
+            System.out.println("");
 	}
-	public void agrega(){
-		if (this.persona.length==0) {
-			this.persona[0]=(int) (Math.random() * 15) + 1;
-		}
-		else {
-			if (this.persona.length<10) {
-			this.persona[this.persona.length+1]=(int) (Math.random() * 15) + 1;
-			}
-		}		
-	}
-    
+	public void agrega(int i){
+            this.persona[i]=r.nextInt(15)+ 1;         		
+	}   
 }
